@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eng:Mostafa Ali Ahmed Zahra</title>
+  <link href="../admin/css/all.min.css" rel="stylesheet" />
+  <link href="../admin/css/main1.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#" style="color:red"><b>MyBooks</b></a>
+    </div>
+    <ul class="menu">
+      <button id="btn"><i class="fa-solid fa-bars"></i></button>
+      <ul class="menu-list" id="ll">
+        <li class="home">Home</li>
+        <li class="insert">Insert</li>
+        <li class="update">Update</li>
+        <li class="delete">Delete</li>
+        <li class="logout">logout</a></li>
+      </ul>
+    </ul>
+  </nav>
+  <section class="forms">
+     
+    <form action="../php/insertbook.php" method="post" id="insert">
+      <label for="id1">Id</label>
+      <input type="text" name="id1" id="id1" />
+      <label for="id2">Book name</label>
+      <input type="text" name="namebook" id="id2" />
+      <label for="id3"> Author </label>
+      <input type="text" name="Author" id="id3" />
+      <label for="id4">Photo's book</label>
+      <input type="file" name="photo" id="id4" />
+      <label for="id5">description</label>
+      <textarea name="description" id="" cols="30" rows="10"></textarea>
+      <input type="submit" value="insert" />
+    </form>
+    <form action="../php/updatebook.php" method="post" id="update">
+      <label for="id1">Id</label>
+      <input type="text" name="id1" id="id1" />
+      <label for="id2">Book name</label>
+      <input type="text" name="namebook" id="id2" />
+      <label for="id3"> Author </label>
+      <input type="text" name="Author" id="id3" />
+      <label for="id4">Photo's book</label>
+      <input type="file" name="photo" id="id4" />
+      <label for="id5">description</label>
+      <textarea name="description" id="" cols="30" rows="10"> </textarea>
+      <input type="submit" value="Update" />
+    </form>
+
+    <form action="../php/deletebook.php" id="delete" method="post">
+      <label for="l1">id</label>
+      <input type="text" id="l1" />
+      <input type="submit" value="Delete" />
+    </form>
+
+  </section>
+  <footer>
+    all right reversed to iti
+    Eng: Mostafa Ali Ahmed Zahra
+  </footer>
+  <script src="../admin/js/main1.js"></script>
+</body>
+
+</html>

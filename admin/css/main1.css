@@ -1,0 +1,217 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../photo/pexels-ivo-rainha-1261180.jpg");
+  background-size: cover;
+}
+.navbar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.logo {
+  width: 20%;
+  height: 60px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.menu {
+  width: 60%;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.menu-list {
+  display: inline-flex;
+}
+
+.menu-list li {
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+
+#btn {
+  margin: 10px;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  display: none;
+}
+.list {
+  position: absolute;
+  top: 50px;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(0, 0, 0, 90%);
+  text-align: center;
+  z-index: 500;
+  display: none;
+}
+.control:hover .list {
+  display: block;
+}
+/*mobile screen*/
+@media (max-width: 767px) {
+  .navvar {
+    width: 100%;
+  }
+
+  .menu-list {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background-color: #eee;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    z-index: 1000;
+    text-align: center;
+    transform-origin: center center;
+    transition-duration: 1s;
+    transform: rotateX(90deg);
+  }
+
+  #btn {
+    display: block;
+  }
+}
+
+/**********end mobile screen************/
+.forms {
+  height: 750px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 67px;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+#insert,
+#update,
+#delete,
+#search {
+  height: 90%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 50%);
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  color: white;
+  border: 2px solid red;
+  top: 15%;
+}
+
+input {
+  height: 50px;
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 10px;
+
+  background-color: rgb(0, 0, 0, 60%);
+  color: white;
+  outline: none;
+  border-bottom: 3px solid red;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+textarea {
+  width: 90%;
+  height: 200px;
+  resize: none;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0, 60%);
+  color: white;
+  outline: none;
+  border-bottom: 1px solid red;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+  font-size: larger;
+  background-color: red;
+  
+}
+
+#delete {
+  height: 200px;
+}
+
+/******************************************************/
+footer {
+  height: 55px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  left: 0%;
+  bottom: -41%;
+}
+
+#books {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: center;
+}
+.card {
+  height: 420px;
+  width: 22.5%;
+  background-color: rgb(0, 0, 0, 50%);
+  box-shadow: 0px 3px 10px 1px rgb(0 0 0/0.2);
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+  color: white;
+}
+.card img {
+  height: 250px;
+  width: 100%;
+}
+.card a {
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  #books {
+    width: 100%;
+    height: auto;
+  }
+  .card {
+    width: 100%;
+    height: 400px;
+  }
+}
